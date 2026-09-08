@@ -1,0 +1,55 @@
+{
+  "search": {
+    "days": 7,
+    "since": null,
+    "until": null,
+    "logNames": [
+      "Application",
+      "System"
+    ],
+    "excludeLogNames": [],
+    "providerNames": [],
+    "eventIds": [],
+    "levels": [
+      "Critical",
+      "Error"
+    ],
+    "terms": [],
+    "termMatch": "Any",
+    "useRegex": false,
+    "caseSensitive": false,
+    "matchFields": [
+      "Message",
+      "Provider",
+      "LogName",
+      "Properties"
+    ],
+    "maxEventsPerLog": 0
+  },
+  "context": {
+    "enabled": true,
+    "minutes": 3,
+    "maxAnchors": 100,
+    "logNames": [
+      "Application",
+      "System"
+    ],
+    "levels": [
+      "Critical",
+      "Error",
+      "Warning"
+    ]
+  },
+  "output": {
+    "directory": "./output",
+    "timestampedDirectory": true,
+    "formats": [
+      "Csv",
+      "Json"
+    ],
+    "sortOrder": "NewestFirst"
+  },
+  "execution": {
+    "requestElevation": true
+  }
+}

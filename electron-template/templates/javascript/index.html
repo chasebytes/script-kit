@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+    <title>{{DISPLAY_NAME}}</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Electron starter</p>
+      <h1>{{DISPLAY_NAME}}</h1>
+      <p class="lede">Your secure desktop shell is ready.</p>
+      <dl class="versions">
+        <div><dt>Electron</dt><dd data-version="electron">—</dd></div>
+        <div><dt>Chromium</dt><dd data-version="chrome">—</dd></div>
+        <div><dt>Node.js</dt><dd data-version="node">—</dd></div>
+      </dl>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

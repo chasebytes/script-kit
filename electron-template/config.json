@@ -1,0 +1,26 @@
+{
+  "project": {
+    "name": "my-electron-app",
+    "displayName": "My Electron App",
+    "version": "1.0.0",
+    "description": "A desktop application built with Electron.",
+    "author": "",
+    "license": "MIT"
+  },
+  "template": {
+    "language": "JavaScript",
+    "outputDirectory": "."
+  },
+  "window": {
+    "width": 1100,
+    "height": 720,
+    "openDevTools": false
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "latest"
+  },
+  "tooling": {
+    "installDependencies": true
+  }
+}

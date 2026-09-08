@@ -1,0 +1,62 @@
+{
+  "search": {
+    "days": 14,
+    "since": null,
+    "until": null,
+    "logNames": ["*"],
+    "excludeLogNames": ["PowerShellCore", "Windows PowerShell"],
+    "providerNames": [],
+    "eventIds": [],
+    "levels": [],
+    "terms": [
+      "Rockstar",
+      "Rockstar Games",
+      "RockstarService",
+      "Social Club",
+      "SocialClubHelper",
+      "LauncherPatcher",
+      "GTAV",
+      "GTA V",
+      "GTA5",
+      "GTA5.exe",
+      "GTA5_Enhanced",
+      "PlayGTAV",
+      "BattlEye",
+      "BattleEye",
+      "Battle Eye",
+      "BEService",
+      "BEDaisy",
+      "BEDaisy.sys",
+      "BattlEye Launcher"
+    ],
+    "termMatch": "Any",
+    "useRegex": false,
+    "caseSensitive": false,
+    "matchFields": ["Message", "Provider", "LogName", "Properties"],
+    "maxEventsPerLog": 0
+  },
+  "context": {
+    "enabled": true,
+    "minutes": 3,
+    "maxAnchors": 100,
+    "logNames": [
+      "Application",
+      "System",
+      "Security",
+      "Microsoft-Windows-WER-SystemErrorReporting/Operational",
+      "Microsoft-Windows-Windows Defender/Operational",
+      "Microsoft-Windows-CodeIntegrity/Operational",
+      "Microsoft-Windows-TaskScheduler/Operational"
+    ],
+    "levels": ["Critical", "Error", "Warning"]
+  },
+  "output": {
+    "directory": "../gtaV/output",
+    "timestampedDirectory": true,
+    "formats": ["Csv", "Json"],
+    "sortOrder": "NewestFirst"
+  },
+  "execution": {
+    "requestElevation": true
+  }
+}

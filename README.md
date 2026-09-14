@@ -7,7 +7,7 @@ A collection of focused utilities, diagnostic tools, and project scaffolds. Each
 | Project | What it does | Entry point |
 | --- | --- | --- |
 | [Windows Event Log Analyzer](./event-log-analyzer/) | Configurable Windows event-log search, contextual correlation, and CSV/JSON reporting. | [`Analyze-EventLogs.ps1`](./event-log-analyzer/Analyze-EventLogs.ps1) |
-| [GTA V Event Investigation](./gtaV/) | A GTA V, Rockstar, Social Club, and BattlEye investigation profile built on the shared event-log analyzer. | [`CheckEvents.ps1`](./gtaV/CheckEvents.ps1) |
+| [GTA V Event Investigation](./gtaV/) | Audited GTA V/BattlEye diagnostics, reversible repair and hardware-utility isolation. | [`Diagnose-Gta.ps1`](./gtaV/Diagnose-Gta.ps1) / [`Repair-Gta.ps1`](./gtaV/Repair-Gta.ps1) |
 | [Electron App Template](./electron-template/) | Configurable PowerShell module for secure JavaScript or TypeScript Electron apps, with terminal-managed profiles. | [`Init-Electron-App.ps1`](./electron-template/Init-Electron-App.ps1) |
 | [MSI Laptop Utilities](./msi-laptop-utils/) | Validates MSI recovery-media split image files with DISM before attempting recovery. | [`Check-MSIRecovery.ps1`](./msi-laptop-utils/Check-MSIRecovery.ps1) |
 
@@ -36,3 +36,8 @@ The repository is Windows-oriented and primarily uses PowerShell. Individual pro
 ## License
 
 See [LICENSE](./LICENSE).
+
+
+### ASUS utilities
+
+[ASUS utilities](./asus-utils/) wraps the official Armoury Crate uninstaller with publisher validation and audit logs; see its README for preview and execution instructions.
